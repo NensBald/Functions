@@ -22,4 +22,8 @@ function isURL($url) {
         return (!filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRED) === false) ? true : false;
 }
 
+function isFloat($n) {
+        return (filter_var($n, FILTER_VALIDATE_FLOAT) === false) ? true : false;
+}
+
 ?>
