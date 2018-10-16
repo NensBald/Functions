@@ -1,3 +1,4 @@
+<?php
 function isEmpty($str) {
     $check = trim($str);
     return (empty($check) && strlen($check) == 0) ? true : false;
