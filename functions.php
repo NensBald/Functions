@@ -14,4 +14,8 @@ function isInt($int) {
         return (!filter_var($int, FILTER_VALIDATE_INT) === false) ? true : false;
 }
 
+function isIP($ip) {
+        return (!filter_var($ip, FILTER_VALIDATE_IP) === false) ? true : false;
+}
+
 ?>
