@@ -1,7 +1,7 @@
 <?php
 
-function isEmpty($str) {
-        $c = trim($str);
+function isEmpty($s) {
+        $c = trim($s);
         return (empty($c) && strlen($c) == 0) ? true : false;
 }
 
