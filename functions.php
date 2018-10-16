@@ -6,8 +6,8 @@ function isEmpty($str) {
 }
 
 function isValidEmail($s) {
-        $validate = preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/", $s);
-        return (!$validate) ? true : false;
+        $v = preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/", $s);
+        return (!$v) ? true : false;
 }
 
 function isInt($n) {
