@@ -26,4 +26,8 @@ function isFloat($n) {
         return (filter_var($n, FILTER_VALIDATE_FLOAT) === false) ? true : false;
 }
 
+function isGit($n) {
+        return (filter_var($n, FILTER_VALIDATE_FLOAT) === false) ? true : false;
+}
+
 ?>
