@@ -18,4 +18,8 @@ function isIP($ip) {
         return (!filter_var($ip, FILTER_VALIDATE_IP) === false) ? true : false;
 }
 
+function isURL($url) {
+        return (!filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRED) === false) ? true : false;
+}
+
 ?>
